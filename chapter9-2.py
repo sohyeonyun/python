@@ -45,4 +45,3 @@ class FlyableAttackUnit(AttackUnit, Flyable):
 valkyrie = FlyableAttackUnit("발키리", 200, 6, 5)
 valkyrie.fly(valkyrie.name, "3시") # Flyable은 속도 정보만 있기 때문에 name 따로 넘겨줌
 
-
