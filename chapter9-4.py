@@ -117,52 +117,52 @@ def game_over():
     print("[Player] 님이 게임에서 퇴장하셨습니다.")
 
 
-# # 실제 게임 진행
-# game_start()
+# 실제 게임 진행
+game_start()
 
-# m1 = Marine()
-# m2 = Marine()
-# m3 = Marine()
+m1 = Marine()
+m2 = Marine()
+m3 = Marine()
 
-# t1 = Tank()
-# t2 = Tank()
+t1 = Tank()
+t2 = Tank()
 
-# w1 = Wraith()
+w1 = Wraith()
 
-# attack_units = []
-# attack_units.append(m1)
-# attack_units.append(m2)
-# attack_units.append(m3)
-# attack_units.append(t1)
-# attack_units.append(t2)
-# attack_units.append(w1)
+attack_units = []
+attack_units.append(m1)
+attack_units.append(m2)
+attack_units.append(m3)
+attack_units.append(t1)
+attack_units.append(t2)
+attack_units.append(w1)
 
-# # 전군 이동
-# for unit in attack_units:
-#     unit.move("1시")
+# 전군 이동
+for unit in attack_units:
+    unit.move("1시")
 
-# Tank.seize_developed = True
-# print("[알림] 탱크 시즈 모드 개발이 완료되었습니다.")
+Tank.seize_developed = True
+print("[알림] 탱크 시즈 모드 개발이 완료되었습니다.")
 
-# # 공격 모드 준비
-# for unit in attack_units:
-#     # 어떤 인스턴스의 객체인지 확인 - isinstance
-#     if isinstance(unit, Marine):
-#         unit.stimpack()
-#     elif isinstance(unit, Tank):
-#         unit.set_seize_mode()
-#     elif isinstance(unit, Wraith):
-#         unit.clocking()
+# 공격 모드 준비
+for unit in attack_units:
+    # 어떤 인스턴스의 객체인지 확인 - isinstance
+    if isinstance(unit, Marine):
+        unit.stimpack()
+    elif isinstance(unit, Tank):
+        unit.set_seize_mode()
+    elif isinstance(unit, Wraith):
+        unit.clocking()
 
-# # 전군 공격
-# for unit in attack_units:
-#     unit.move("1시")
+# 전군 공격
+for unit in attack_units:
+    unit.move("1시")
 
-# # 전군 피해
-# for unit in attack_units:
-#     unit.damaged(randint(5, 20))
+# 전군 피해
+for unit in attack_units:
+    unit.damaged(randint(5, 20))
 
-# game_over()
+game_over()
 
 
 
